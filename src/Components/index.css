@@ -217,9 +217,12 @@ body {
   font-size: 1.2rem;
 }
 .page2-content {
-  margin: 0 6vw 0 6vw;
+  margin: 5vh 6vw 0 6vw;
 }
 @media (max-width: 600px) {
+  .page2-content-main-img {
+    height: 80vh;
+  }
   .page2-content-2-item {
     text-align: center;
     margin: 30px 0;

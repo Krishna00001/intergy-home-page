@@ -44,7 +44,7 @@ export default function Page2() {
               <p>Functional, sleek and intuitive web applications</p>
             </div>
           </div>
-          <img src={page2ServicesImg} alt="services-img" />
+          <img className="page2-content-main-img" src={page2ServicesImg} alt="services-img" />
           <div className="page2-content-2-item-2">
             <div className="page2-content-2-item">
               <h4>WEB APP</h4>
