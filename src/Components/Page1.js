@@ -1,17 +1,51 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
+import { Modal } from "antd";
+import "antd/dist/antd.css";
 import Logo from "./__img/headingLogo.png";
 import headerImg1 from "./__img/headerImg1.png";
 import headerContentImg from "./__img/headerContentImg.png";
 import headerBlurredImg from "./__img/headerblurredImg.png";
+import menuImg from "./__img/menu.png";
 import "./index.css";
 
 export default function Page1() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
   return (
     <Fragment>
       <div className="page1-header">
         <div className="page1-heading-logo">
           <img src={Logo} alt="logo" />
         </div>
+        <div className="page1-menuImg" onClick={showModal}>
+          <img src={menuImg} alt="menu-img" />
+        </div>
+        <Modal
+          visible={isModalVisible}
+          onOk={handleOk}
+          onCancel={handleCancel}
+          footer={null}
+        >
+          <ul class="page1-modal">
+            <li>HOME</li>
+            <li>CAPABILITIES</li>
+            <li>OUR WORK</li>
+            <li>ABOUT</li>
+            <li>ARTICLES</li>
+            <li>CONTACT</li>
+          </ul>
+        </Modal>
         <div className="page1-header-nav">
           <ul>
             <li>HOME</li>
