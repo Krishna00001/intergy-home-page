@@ -32,7 +32,7 @@ export default function Page1() {
             <h2>Custom Software Solutions Built for Your Buisness</h2>
             <p>Partner with intergy to reach your buisness goals faster</p>
           </div>
-          <div page1-header-img img1>
+          <div className="page1-header-img">
             <img
               className="page1-header-img1"
               src={headerImg1}
@@ -52,20 +52,22 @@ export default function Page1() {
             alt="header-img"
           />
         </div>
-        <p className="page1-content-main">
-          <span className="page1-content-main-heading">Innovate</span>- Create
-          new products and processes
-        </p>
-        <p className="page1-content-main">
-          <span className="page1-content-main-heading">Automate</span>-
-          Streamline and integrate buisness processes
-        </p>
-        <p className="page1-content-main">
-          <span className="page1-content-main-heading">Captivate</span>- Engage
-          your auidence with web and mobile applications
-        </p>
-        <div className="page1-content-button">
-          <h4>TELL US ABOUT YOUR PROJECT</h4>
+        <div className="page1-content-text">
+          <p className="page1-content-main">
+            <span className="page1-content-main-heading">Innovate</span> -
+            Create new products and processes
+          </p>
+          <p className="page1-content-main">
+            <span className="page1-content-main-heading">Automate</span> -
+            Streamline and integrate buisness processes
+          </p>
+          <p className="page1-content-main">
+            <span className="page1-content-main-heading">Captivate</span> -
+            Engage your auidence with web and mobile applications
+          </p>
+          <div className="page1-content-button">
+            <h4>TELL US ABOUT YOUR PROJECT</h4>
+          </div>
         </div>
       </div>
     </Fragment>

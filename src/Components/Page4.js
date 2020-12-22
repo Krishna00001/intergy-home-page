@@ -1,5 +1,9 @@
 import React, { Fragment } from "react";
 import Page4MainImg from "./__img/page4MainImg1.png";
+import facebookImg from "./__img/facebook.png";
+import twitterImg from "./__img/twitter.png";
+import linkedinImg from "./__img/linkedin.png";
+import googleplusImg from "./__img/googleplus.png";
 import "./index.css";
 
 export default function Page4() {
@@ -68,15 +72,19 @@ export default function Page4() {
             <ul>
               <li>follow us on</li>
               <li>
+                <img src={facebookImg} alt="fb-img" />
                 <h3>Facebook</h3>
               </li>
               <li>
+                <img src={linkedinImg} alt="linkedin-img" />
                 <h3>Linkedin</h3>
               </li>
               <li>
+                <img src={twitterImg} alt="twitter-img" />
                 <h3>Twitter</h3>
               </li>
               <li>
+                <img src={googleplusImg} alt="googleplus-img" />
                 <h3>Google+</h3>
               </li>
             </ul>

@@ -16,6 +16,7 @@ body {
   padding: 15px;
   font-size: 1rem;
   font-weight: 600;
+  margin: 0 0 0 100px;
 }
 .page1-header-nav li {
   display: inline-block;
@@ -38,16 +39,16 @@ body {
   align-items: center;
   border-radius: 20px;
 }
+.page1-content-heading {
+  margin: 0 0 0 100px;
+}
 .page1-content-container {
   display: flex;
 }
-.page1-content-container > div {
-  flex-basis: 50%;
-}
 .page1-content-heading {
   display: flex;
-  width: 50vw;
-  flex-basis: 50%;
+  justify-content: center;
+  width: 50%;
   flex-direction: column;
 }
 .page1-content-heading h2 {
@@ -57,13 +58,80 @@ body {
 .page1-content-heading p {
   color: darkblue;
 }
-.page1-header-img {
-  width: 50vw;
+.page1-header-img img {
+  z-index: -1;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.page1-content-main {
+  color: #092b4b;
+  margin: 10px 0 0 0;
+}
+.page1-content-main-heading {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 .page1-header-img3-container img {
-  width: 99vw;
+  width: 100%;
+  position: relative;
+  margin-top: -8vh;
+  z-index: 0;
+}
+.page1-content-text {
+  z-index: 1;
   position: absolute;
+  left: 37%;
+  top: 800px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  .page1-content-text {
+    z-index: 1;
+    position: absolute;
+    left: 37%;
+    top: 1000px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.page1-content-button {
+  background-color: orangered;
+  border-radius: 50px;
+  width: 60%;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px 0 0 0;
+  padding: 10px;
+}
+.page1-content-button h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .page1-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .page1-header-nav li {
+    display: flex;
+    flex-direction: column;
+  }
+  .page4-content-2-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .page1-content-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 /*Page 2*/
 .page2-content-img img {
@@ -93,6 +161,12 @@ body {
   display: flex;
   margin: 20px 0 0 0;
 }
+@media (max-width: 600px) {
+  .page2-content-2-items {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .page2-content-2-item {
   text-align: center;
 }
@@ -107,12 +181,28 @@ body {
   font-weight: 600;
   font-size: 1.2rem;
 }
+.page2-content {
+  margin: 0 6vw 0 6vw;
+}
+@media (max-width: 600px) {
+  .page2-content {
+    margin: 120vw 6vw 0 6vw;
+  }
+}
 .page2-content-2-item p {
   color: #05182a;
   margin: 20px 0 0 0;
 }
 .page3-content-recent-projects {
   display: flex;
+}
+@media (max-width: 600px) {
+  .page3-content-recent-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .page3-content-recent-projects img {
   width: 40%;
@@ -142,6 +232,9 @@ body {
 }
 .page3-content-viewmore {
   color: green;
+}
+.page3-content-our-testimonials {
+  margin: 0 6vw;
 }
 ..page3-content-our-testimonials {
   margin: 50px 0;
@@ -181,7 +274,7 @@ body {
   color: grey;
 }
 .page3-content-recent-articles {
-  margin: 50px 0;
+  margin: 50px 6vw;
 }
 .page3-content-recent-articles h2 {
   text-align: center;
@@ -191,6 +284,13 @@ body {
 }
 .page3-content-recent-articles-content {
   display: flex;
+}
+@media (max-width: 600px) {
+  .page3-content-recent-articles-content {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 0 0;
+  }
 }
 .page3-content-recent-articles-content-text {
   display: flex;
@@ -217,6 +317,11 @@ body {
 .page4-content-1 {
   display: flex;
   margin: 50px 0;
+}
+@media (max-width: 600px) {
+  .page4-content-1 {
+    flex-direction: column;
+  }
 }
 .page4-content-1-text {
   display: flex;
@@ -258,6 +363,11 @@ body {
   border-radius: 50px;
   font-weight: 500;
 }
+@media (max-width: 600px) {
+  .page4-content-1-text-bottom {
+    flex-direction: column;
+  }
+}
 .page4-content-2 {
   background-color: blue;
   margin: 0 !important;
@@ -285,6 +395,10 @@ body {
   list-style-type: none;
   margin: 10px 0;
   cursor: pointer;
+  display: flex;
+}
+.page4-content-2-nav-item h3 {
+  margin: 0 0 0 10px;
 }
 .page4-footer {
   color: #fff;
@@ -294,9 +408,14 @@ body {
 }
 .page4-footer ul {
   background-color: rgb(37, 35, 35);
-  width: 100%;
 }
 .page4-footer li {
   display: inline-block;
   padding: 20px;
+}
+@media (max-width: 600) {
+  .page4-footer li {
+    display: flex;
+    flex-direction: column;
+  }
 }
